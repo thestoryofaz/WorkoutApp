@@ -21,6 +21,7 @@
 		55176305285E6BFF009470C5 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55176304285E6BFF009470C5 /* SessionController.swift */; };
 		55176307285E6C23009470C5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55176306285E6C23009470C5 /* ProgressController.swift */; };
 		55176309285E6C32009470C5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55176308285E6C32009470C5 /* SettingsController.swift */; };
+		55B65374285F33F70049F6DC /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B65373285F33F70049F6DC /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		55176304285E6BFF009470C5 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		55176306285E6C23009470C5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		55176308285E6C32009470C5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		55B65373285F33F70049F6DC /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		55176300285E6BA1009470C5 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				55B65372285F33820049F6DC /* Views */,
 				551762DE285E54DF009470C5 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -169,6 +172,14 @@
 				55176308285E6C32009470C5 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		55B65372285F33820049F6DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55B65373285F33F70049F6DC /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				551762FE285E6A24009470C5 /* UIView + Ext.swift in Sources */,
 				551762F4285E57FD009470C5 /* UIColor + Ext.swift in Sources */,
 				55176305285E6BFF009470C5 /* SessionController.swift in Sources */,
+				55B65374285F33F70049F6DC /* SecondaryButton.swift in Sources */,
 				55176307285E6C23009470C5 /* ProgressController.swift in Sources */,
 				551762F9285E65C0009470C5 /* NavigationBarController.swift in Sources */,
 				551762F7285E5894009470C5 /* Resources.swift in Sources */,
