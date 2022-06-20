@@ -8,12 +8,11 @@ enum Tabs: Int {
 }
 
 final class TabBarController: UITabBarController {
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
         configure()
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -42,8 +41,8 @@ final class TabBarController: UITabBarController {
                                                      image: Resources.Images.TabBar.overview,
                                                      tag: Tabs.overview.rawValue)
         sessionNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.session,
-                                                     image: Resources.Images.TabBar.session,
-                                                     tag: Tabs.session.rawValue)
+                                                    image: Resources.Images.TabBar.session,
+                                                    tag: Tabs.session.rawValue)
         progressNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progress,
                                                      image: Resources.Images.TabBar.progress,
                                                      tag: Tabs.progress.rawValue)

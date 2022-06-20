@@ -1,7 +1,7 @@
 import UIKit
 
 class SessionController: BaseContoller {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "High Intensity Cardio"

@@ -10,7 +10,6 @@ enum Resources {
         static var secondary = UIColor(hexString: "#F0F3FF")
         
         static var titleGray = UIColor(hexString: "#545C77")
-        
     }
     
     enum Strings {
@@ -26,7 +25,6 @@ enum Resources {
             static var session = "High Intensity Cardio"
             static var progress = "Workout Progress"
             static var settings = "Settings"
-            
         }
         
         enum Overview {
@@ -58,6 +56,7 @@ enum Resources {
         
         enum Common {
             static var downArrow = UIImage(named: "downArrow")
+            static var addButton = UIImage(named: "addButton")
         }
     }
     
