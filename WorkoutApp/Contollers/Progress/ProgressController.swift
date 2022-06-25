@@ -4,10 +4,25 @@ class ProgressController: BaseContoller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Workout Progress"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.progress
+    }
+}
+
+extension ProgressController {
+    override func setupViews() {
+        super.setupViews()
+    }
+    
+    override func constraintViews() {
+        super.constraintViews()
+    }
+    
+    override func configureAppearance() {
+        super.configureAppearance()
         
-        addNavBarButton(at: .left, with: "Export")
-        addNavBarButton(at: .right, with: "Details")
+        title = Resources.Strings.NavBar.progress
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .progress)
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Progress.navBarLeft)
+        addNavBarButton(at: .right, with: Resources.Strings.Progress.navBarRight)
     }
 }

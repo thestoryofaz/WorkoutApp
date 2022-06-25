@@ -1,9 +1,26 @@
 import UIKit
 
 final class OverviewNavBar: BaseView {
-    private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
-    private let addButton = UIButton()
+    
+    private let titleLabel: UILabel = {
+        let lable = UILabel()
+        lable.text = Resources.Strings.NavBar.overview
+        lable.textColor = Resources.Colors.titleGray
+        lable.font = Resources.Fonts.helveticaRegular(with: 22)
+        return lable
+    }()
+    
+    private let allWorkoutsButton: SecondaryButton = {
+        let button = SecondaryButton()
+        button.setTitle(Resources.Strings.Overview.allWorkoutsButton)
+        return button
+    }()
+    
+    private let addButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Resources.Images.Common.addButton, for: .normal)
+        return button
+    }()
     
     private let weekView = WeekView()
     
@@ -23,16 +40,17 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
-        addView(titleLabel)
-        addView(allWorkoutsButton)
-        addView(addButton)
-        addView(weekView)
+    override func setupViews() {
+        super.setupViews()
+        
+        setupView(titleLabel)
+        setupView(allWorkoutsButton)
+        setupView(addButton)
+        setupView(weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -55,19 +73,6 @@ extension OverviewNavBar {
             weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
             weekView.heightAnchor.constraint(equalToConstant: 47)
         ])
-    }
-    
-    override func configureView() {
-        super.configureView()
-        backgroundColor = .white
-        
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.titleGray
-        titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
-        
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
-        
-        addButton.setImage(Resources.Images.Common.addButton, for: .normal)
     }
 }
 

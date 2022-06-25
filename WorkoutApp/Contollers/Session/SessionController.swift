@@ -1,13 +1,23 @@
 import UIKit
 
-class SessionController: BaseContoller {
+class SessionController: BaseContoller {}
+
+extension SessionController {
+    override func setupViews() {
+         super.setupViews()
+    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "High Intensity Cardio"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
+    override func constraintViews() {
+        super.constraintViews()
+    }
+    
+    override func configureAppearance() {
+        super.configureAppearance()
         
-        addNavBarButton(at: .left, with: "Pause")
-        addNavBarButton(at: .right, with: "Finish")
+        title = Resources.Strings.NavBar.session
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .session)
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
     }
 }

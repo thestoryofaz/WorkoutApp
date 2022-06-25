@@ -2,15 +2,27 @@ import UIKit
 
 final class SecondaryButton: UIButton {
     
-    private let label = UILabel()
-    private let iconView = UIImageView()
+    private let label: UILabel = {
+        let lable = UILabel()
+        lable.textColor = Resources.Colors.active
+        lable.textAlignment = .center
+        lable.font = Resources.Fonts.helveticaRegular(with: 15)
+        return lable
+    }()
+    
+    private let iconView: UIImageView = {
+        let view = UIImageView()
+        view.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        view.tintColor = Resources.Colors.active
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintViews()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
@@ -24,12 +36,12 @@ final class SecondaryButton: UIButton {
 }
 
 private extension SecondaryButton {
-    func addViews() {
-        addView(label)
-        addView(iconView)
+    func setupViews() {
+        setupView(label)
+        setupView(iconView)
     }
     
-    func layoutViews() {
+    func constraintViews() {
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
             iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
@@ -42,16 +54,9 @@ private extension SecondaryButton {
         ])
     }
     
-    func configure() {
+    func configureAppearance() {
         backgroundColor = Resources.Colors.secondary
         layer.cornerRadius = 14
         makeSystem(self)
-        
-        label.textColor = Resources.Colors.active
-        label.textAlignment = .center
-        label.font = Resources.Fonts.helveticaRegular(with: 15)
-        
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Colors.active
     }
 }

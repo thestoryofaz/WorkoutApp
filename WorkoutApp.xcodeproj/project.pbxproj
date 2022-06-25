@@ -65,6 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550C559128678C5A0006AE40 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				551762F8285E65C0009470C5 /* NavigationBarController.swift */,
+				551762F0285E56EE009470C5 /* TabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		550C559228678EB40006AE40 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				558A7B392863932500792030 /* WeekView */,
+				557C1B7E2860E3AD00171DFF /* OverviewNavBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		551762CE285E54DF009470C5 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +102,9 @@
 		551762D9285E54DF009470C5 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
-				551762F2285E57DC009470C5 /* Helpers */,
-				551762F6285E5894009470C5 /* Resources.swift */,
 				551762EE285E54E9009470C5 /* Application */,
 				551762FA285E6805009470C5 /* Contollers */,
+				551762F2285E57DC009470C5 /* Helpers */,
 				551762EF285E5503009470C5 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
@@ -116,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				551762F5285E5808009470C5 /* Extensions */,
+				551762F6285E5894009470C5 /* Resources.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -123,9 +141,9 @@
 		551762F5285E5808009470C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				558A7B3E28639CAF00792030 /* Date + Ext.swift */,
 				551762F3285E57FD009470C5 /* UIColor + Ext.swift */,
 				551762FD285E6A24009470C5 /* UIView + Ext.swift */,
-				558A7B3E28639CAF00792030 /* Date + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -134,9 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				551762FF285E6B91009470C5 /* Base */,
+				550C559128678C5A0006AE40 /* Navigation */,
 				55176300285E6BA1009470C5 /* Overview */,
-				55176302285E6BC6009470C5 /* Session */,
 				55176301285E6BB2009470C5 /* Progress */,
+				55176302285E6BC6009470C5 /* Session */,
 				55176303285E6BD1009470C5 /* Settings */,
 			);
 			path = Contollers;
@@ -145,8 +164,6 @@
 		551762FF285E6B91009470C5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				551762F0285E56EE009470C5 /* TabBarController.swift */,
-				551762F8285E65C0009470C5 /* NavigationBarController.swift */,
 				551762FB285E6821009470C5 /* BaseController.swift */,
 				557C1B802860E3FB00171DFF /* BaseView.swift */,
 			);
@@ -198,9 +215,8 @@
 		55B65372285F33820049F6DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				558A7B392863932500792030 /* WeekView */,
+				550C559228678EB40006AE40 /* NavigationBar */,
 				55B65373285F33F70049F6DC /* SecondaryButton.swift */,
-				557C1B7E2860E3AD00171DFF /* OverviewNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -8,19 +8,19 @@ enum NavBarPossition {
 class BaseContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintViews()
+        configureAppearance()
     }
 }
 
 @objc extension BaseContoller {
     
-    func addViews() {}
+    func setupViews() {}
     
-    func layoutViews() {}
+    func constraintViews() {}
     
-    func configure() {
+    func configureAppearance() {
         view.backgroundColor = Resources.Colors.background
     }
     
