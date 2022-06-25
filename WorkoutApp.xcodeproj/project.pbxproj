@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550C55942867A1AE0006AE40 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C55932867A1AE0006AE40 /* BaseInfoView.swift */; };
 		551762DB285E54DF009470C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DA285E54DF009470C5 /* AppDelegate.swift */; };
 		551762DD285E54DF009470C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DC285E54DF009470C5 /* SceneDelegate.swift */; };
 		551762DF285E54DF009470C5 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DE285E54DF009470C5 /* OverviewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550C55932867A1AE0006AE40 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		551762D7285E54DF009470C5 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551762DA285E54DF009470C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551762DC285E54DF009470C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				551762FB285E6821009470C5 /* BaseController.swift */,
 				557C1B802860E3FB00171DFF /* BaseView.swift */,
+				550C55932867A1AE0006AE40 /* BaseInfoView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				551762F4285E57FD009470C5 /* UIColor + Ext.swift in Sources */,
 				558A7B3F28639CAF00792030 /* Date + Ext.swift in Sources */,
 				55176305285E6BFF009470C5 /* SessionController.swift in Sources */,
+				550C55942867A1AE0006AE40 /* BaseInfoView.swift in Sources */,
 				55B65374285F33F70049F6DC /* SecondaryButton.swift in Sources */,
 				55176307285E6C23009470C5 /* ProgressController.swift in Sources */,
 				551762F9285E65C0009470C5 /* NavigationBarController.swift in Sources */,
