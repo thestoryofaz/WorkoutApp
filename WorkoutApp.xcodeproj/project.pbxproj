@@ -28,6 +28,8 @@
 		558A7B3D286395C900792030 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7B3C286395C900792030 /* WeekdayView.swift */; };
 		558A7B3F28639CAF00792030 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7B3E28639CAF00792030 /* Date + Ext.swift */; };
 		55B65374285F33F70049F6DC /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B65373285F33F70049F6DC /* WAButton.swift */; };
+		55B79C05286878DE00C455E6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B79C04286878DE00C455E6 /* TimerView.swift */; };
+		55B79C082868798B00C455E6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B79C072868798B00C455E6 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		558A7B3C286395C900792030 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		558A7B3E28639CAF00792030 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
 		55B65373285F33F70049F6DC /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
+		55B79C04286878DE00C455E6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		55B79C072868798B00C455E6 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 		55176302285E6BC6009470C5 /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				55B79C03286878CF00C455E6 /* Views */,
 				55176304285E6BFF009470C5 /* SessionController.swift */,
 			);
 			path = Session;
@@ -222,6 +227,23 @@
 				550C559228678EB40006AE40 /* NavigationBar */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		55B79C03286878CF00C455E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55B79C062868797900C455E6 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55B79C062868797900C455E6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				55B79C04286878DE00C455E6 /* TimerView.swift */,
+				55B79C072868798B00C455E6 /* ProgressView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +326,8 @@
 				558A7B3F28639CAF00792030 /* Date + Ext.swift in Sources */,
 				55176305285E6BFF009470C5 /* SessionController.swift in Sources */,
 				550C55942867A1AE0006AE40 /* WABaseInfoView.swift in Sources */,
+				55B79C05286878DE00C455E6 /* TimerView.swift in Sources */,
+				55B79C082868798B00C455E6 /* ProgressView.swift in Sources */,
 				55B65374285F33F70049F6DC /* WAButton.swift in Sources */,
 				55176307285E6C23009470C5 /* ProgressController.swift in Sources */,
 				551762F9285E65C0009470C5 /* NavigationBarController.swift in Sources */,
