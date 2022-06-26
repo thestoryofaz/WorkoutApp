@@ -154,10 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				551762FF285E6B91009470C5 /* Base */,
+				551762FB285E6821009470C5 /* BaseController.swift */,
+				55B65373285F33F70049F6DC /* SecondaryButton.swift */,
 				550C559128678C5A0006AE40 /* Navigation */,
 				55176300285E6BA1009470C5 /* Overview */,
-				55176301285E6BB2009470C5 /* Progress */,
 				55176302285E6BC6009470C5 /* Session */,
+				55176301285E6BB2009470C5 /* Progress */,
 				55176303285E6BD1009470C5 /* Settings */,
 			);
 			path = Contollers;
@@ -166,7 +168,6 @@
 		551762FF285E6B91009470C5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				551762FB285E6821009470C5 /* BaseController.swift */,
 				557C1B802860E3FB00171DFF /* BaseView.swift */,
 				550C55932867A1AE0006AE40 /* BaseInfoView.swift */,
 			);
@@ -219,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				550C559228678EB40006AE40 /* NavigationBar */,
-				55B65373285F33F70049F6DC /* SecondaryButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
