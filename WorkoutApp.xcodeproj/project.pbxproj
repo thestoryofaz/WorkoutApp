@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550C55942867A1AE0006AE40 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C55932867A1AE0006AE40 /* BaseInfoView.swift */; };
+		550C55942867A1AE0006AE40 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C55932867A1AE0006AE40 /* WABaseInfoView.swift */; };
 		551762DB285E54DF009470C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DA285E54DF009470C5 /* AppDelegate.swift */; };
 		551762DD285E54DF009470C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DC285E54DF009470C5 /* SceneDelegate.swift */; };
 		551762DF285E54DF009470C5 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551762DE285E54DF009470C5 /* OverviewController.swift */; };
@@ -27,11 +27,11 @@
 		558A7B3B2863934500792030 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7B3A2863934500792030 /* WeekView.swift */; };
 		558A7B3D286395C900792030 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7B3C286395C900792030 /* WeekdayView.swift */; };
 		558A7B3F28639CAF00792030 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7B3E28639CAF00792030 /* Date + Ext.swift */; };
-		55B65374285F33F70049F6DC /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B65373285F33F70049F6DC /* SecondaryButton.swift */; };
+		55B65374285F33F70049F6DC /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B65373285F33F70049F6DC /* WAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		550C55932867A1AE0006AE40 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		550C55932867A1AE0006AE40 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		551762D7285E54DF009470C5 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551762DA285E54DF009470C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551762DC285E54DF009470C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		558A7B3A2863934500792030 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		558A7B3C286395C900792030 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		558A7B3E28639CAF00792030 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
-		55B65373285F33F70049F6DC /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		55B65373285F33F70049F6DC /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 			children = (
 				551762FF285E6B91009470C5 /* Base */,
 				551762FB285E6821009470C5 /* BaseController.swift */,
-				55B65373285F33F70049F6DC /* SecondaryButton.swift */,
+				55B65373285F33F70049F6DC /* WAButton.swift */,
 				550C559128678C5A0006AE40 /* Navigation */,
 				55176300285E6BA1009470C5 /* Overview */,
 				55176302285E6BC6009470C5 /* Session */,
@@ -169,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				557C1B802860E3FB00171DFF /* BaseView.swift */,
-				550C55932867A1AE0006AE40 /* BaseInfoView.swift */,
+				550C55932867A1AE0006AE40 /* WABaseInfoView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -303,8 +303,8 @@
 				551762F4285E57FD009470C5 /* UIColor + Ext.swift in Sources */,
 				558A7B3F28639CAF00792030 /* Date + Ext.swift in Sources */,
 				55176305285E6BFF009470C5 /* SessionController.swift in Sources */,
-				550C55942867A1AE0006AE40 /* BaseInfoView.swift in Sources */,
-				55B65374285F33F70049F6DC /* SecondaryButton.swift in Sources */,
+				550C55942867A1AE0006AE40 /* WABaseInfoView.swift in Sources */,
+				55B65374285F33F70049F6DC /* WAButton.swift in Sources */,
 				55176307285E6C23009470C5 /* ProgressController.swift in Sources */,
 				551762F9285E65C0009470C5 /* NavigationBarController.swift in Sources */,
 				551762F7285E5894009470C5 /* Resources.swift in Sources */,
